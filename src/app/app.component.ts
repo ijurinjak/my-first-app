@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name: String = 'Ivan';
-  duljina: Number = 0;
 
-  duljinaImena(): void {
-    this.duljina = this.name.length;
-  }
 }
