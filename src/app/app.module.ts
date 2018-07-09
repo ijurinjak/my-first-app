@@ -2,10 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule } from '@angular/material';
+import { MatInputModule, MatTableModule, MatPaginatorModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { MatFormFieldModule } from '@angular/material';
 import { MatCardModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatTabsModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -17,9 +18,17 @@ import { MatCardModule } from '@angular/material';
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatTabsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [MatButtonModule, MatCheckboxModule]
 })
 export class AppModule { }
